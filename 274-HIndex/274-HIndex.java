@@ -1,0 +1,14 @@
+// Last updated: 7/11/2026, 2:04:44 PM
+class Solution {
+    public int hIndex(int[] citations) {
+        java.util.Arrays.sort(citations);
+        int n = citations.length;
+        
+        for (int i = 0; i < n; i++) {
+            int h = n - i;
+            if (citations[i] >= h) return h;
+        }
+        
+        return 0;
+    }
+}
