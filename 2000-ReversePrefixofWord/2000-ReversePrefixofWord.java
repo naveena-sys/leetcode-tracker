@@ -1,4 +1,4 @@
-// Last updated: 8/7/2026, 1:48:39 PM
+// Last updated: 8/7/2026, 3:59:45 PM
 1class Solution {
 2    public String reversePrefix(String word, char ch) {
 3        int r=word.indexOf(ch);
